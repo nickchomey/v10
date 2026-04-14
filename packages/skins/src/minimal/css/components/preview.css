@@ -30,6 +30,7 @@
     left: 50%;
     translate: -50% -50%;
     opacity: 0;
+    animation-play-state: paused;
   }
 
   & .media-preview__thumbnail,
@@ -43,6 +44,7 @@
     }
     & .media-preview__spinner {
       opacity: 1;
+      animation-play-state: running;
     }
   }
 }

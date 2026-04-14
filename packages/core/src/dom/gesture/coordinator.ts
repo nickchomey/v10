@@ -44,7 +44,8 @@ export class GestureCoordinator {
     listen(
       this.#target,
       'pointerdown',
-      () => {
+      (event) => {
+        if (event.button !== 0) return;
         pointerDownTime = Date.now();
       },
       { signal }
@@ -54,6 +55,7 @@ export class GestureCoordinator {
       this.#target,
       'pointerup',
       (event) => {
+        if (event.button !== 0) return;
         if (Date.now() - pointerDownTime > TAP_THRESHOLD) return;
 
         const pointerType = event.pointerType;

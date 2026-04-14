@@ -22,7 +22,7 @@ function getTemplateHTML() {
 
       <media-buffering-indicator class="media-buffering-indicator">
         <div class="media-surface">
-          ${renderIcon('spinner', { class: 'media-icon' })}
+          ${renderIcon('spinner', { class: 'media-icon media-icon--spinner' })}
         </div>
       </media-buffering-indicator>
 
@@ -81,7 +81,7 @@ function getTemplateHTML() {
               <div class="media-surface media-preview media-slider__preview">
                 <media-slider-thumbnail class="media-preview__thumbnail"></media-slider-thumbnail>
                 <media-slider-value type="pointer" class="media-time media-preview__time"></media-slider-value>
-                ${renderIcon('spinner', { class: 'media-preview__spinner media-icon' })}
+                ${renderIcon('spinner', { class: 'media-preview__spinner media-icon media-icon--spinner' })}
               </div>
             </media-time-slider>
             <media-time type="duration" class="media-time"></media-time>

@@ -21,7 +21,7 @@ function getTemplateHTML() {
       </media-poster>
 
       <media-buffering-indicator class="media-buffering-indicator">
-        ${renderIcon('spinner', { class: 'media-icon' })}
+        ${renderIcon('spinner', { class: 'media-icon media-icon--spinner' })}
       </media-buffering-indicator>
 
       <media-error-dialog class="media-error">
@@ -86,7 +86,7 @@ function getTemplateHTML() {
                   <media-slider-thumbnail class="media-preview__thumbnail"></media-slider-thumbnail>
                 </div>
                 <media-slider-value type="pointer" class="media-time media-preview__time"></media-slider-value>
-                ${renderIcon('spinner', { class: 'media-preview__spinner media-icon' })}
+                ${renderIcon('spinner', { class: 'media-preview__spinner media-icon media-icon--spinner' })}
               </div>
             </media-time-slider>
           </div>

@@ -25,6 +25,7 @@ import {
   icon,
   iconContainer,
   iconFlipped,
+  iconSpinner,
   iconState,
   overlay,
   popup,
@@ -158,7 +159,7 @@ export function MinimalVideoSkinTailwind(props: MinimalVideoSkinProps): ReactNod
       <BufferingIndicator
         render={(props) => (
           <div {...props} className={bufferingIndicator}>
-            <SpinnerIcon className={icon} />
+            <SpinnerIcon className={cn(icon, iconSpinner)} />
           </div>
         )}
       />
@@ -243,7 +244,7 @@ export function MinimalVideoSkinTailwind(props: MinimalVideoSkinProps): ReactNod
                   <Slider.Thumbnail className={preview.thumbnail} />
                 </div>
                 <TimeSlider.Value type="pointer" className={preview.time} />
-                <SpinnerIcon className={cn(icon, preview.spinner)} />
+                <SpinnerIcon className={cn(icon, iconSpinner, preview.spinner)} />
               </div>
             </TimeSlider.Root>
           </div>

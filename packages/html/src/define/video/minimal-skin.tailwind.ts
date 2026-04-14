@@ -9,6 +9,7 @@ import {
   icon,
   iconContainer,
   iconFlipped,
+  iconSpinner,
   iconState,
   overlay,
   playbackRate,
@@ -42,7 +43,7 @@ function getTemplateHTML() {
       </media-poster>
 
       <media-buffering-indicator class="${bufferingIndicator}">
-        ${renderIcon('spinner')}
+        ${renderIcon('spinner', { class: cn(icon, iconSpinner) })}
       </media-buffering-indicator>
 
       <media-error-dialog class="${error.root}">
@@ -107,7 +108,7 @@ function getTemplateHTML() {
                   <media-slider-thumbnail class="${preview.thumbnail}"></media-slider-thumbnail>
                 </div>
                 <media-slider-value type="pointer" class="${preview.time}"></media-slider-value>
-                ${renderIcon('spinner', { class: cn(icon, preview.spinner) })}
+                ${renderIcon('spinner', { class: cn(icon, iconSpinner, preview.spinner) })}
               </div>
             </media-time-slider>
           </div>

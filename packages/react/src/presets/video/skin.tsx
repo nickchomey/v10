@@ -98,7 +98,7 @@ export function VideoSkin(props: VideoSkinProps): ReactNode {
         render={(props) => (
           <div {...props} className="media-buffering-indicator">
             <div className="media-surface">
-              <SpinnerIcon className="media-icon" />
+              <SpinnerIcon className="media-icon media-icon--spinner" />
             </div>
           </div>
         )}
@@ -175,7 +175,7 @@ export function VideoSkin(props: VideoSkinProps): ReactNode {
               <div className="media-surface media-preview media-slider__preview">
                 <Slider.Thumbnail className="media-preview__thumbnail" />
                 <TimeSlider.Value type="pointer" className="media-time media-preview__time" />
-                <SpinnerIcon className="media-preview__spinner media-icon" />
+                <SpinnerIcon className="media-preview__spinner media-icon media-icon--spinner" />
               </div>
             </TimeSlider.Root>
             <Time.Value type="duration" className="media-time" />

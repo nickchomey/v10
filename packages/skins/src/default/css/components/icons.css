@@ -5,6 +5,13 @@
 .media-default-skin .media-icon__container {
   position: relative;
 }
+
+@keyframes media-spinner-rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 .media-default-skin .media-icon {
   display: block;
   flex-shrink: 0;
@@ -16,6 +23,13 @@
   transition-duration: 150ms;
   transition-timing-function: ease-out;
 }
+
+.media-default-skin .media-icon--spinner {
+  animation: media-spinner-rotate 1s linear infinite;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
 .media-default-skin .media-icon--flipped {
   scale: -1 1;
 }

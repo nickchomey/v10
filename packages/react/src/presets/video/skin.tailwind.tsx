@@ -24,6 +24,7 @@ import {
   icon,
   iconContainer,
   iconFlipped,
+  iconSpinner,
   iconState,
   overlay,
   playbackRate,
@@ -159,7 +160,7 @@ export function VideoSkinTailwind(props: VideoSkinProps): ReactNode {
         render={(props) => (
           <div {...props} className={bufferingIndicator.root}>
             <div className={bufferingIndicator.container}>
-              <SpinnerIcon className={icon} />
+              <SpinnerIcon className={cn(icon, iconSpinner)} />
             </div>
           </div>
         )}
@@ -238,7 +239,7 @@ export function VideoSkinTailwind(props: VideoSkinProps): ReactNode {
               <div className={preview.root}>
                 <Slider.Thumbnail className={preview.thumbnail} />
                 <TimeSlider.Value type="pointer" className={preview.time} />
-                <SpinnerIcon className={cn(icon, preview.spinner)} />
+                <SpinnerIcon className={cn(icon, iconSpinner, preview.spinner)} />
               </div>
             </TimeSlider.Root>
             <Time.Value type="duration" className={time.duration} />

@@ -6,6 +6,10 @@ export const icon = cn(
   'transition-discrete transition-[display,opacity] duration-150 ease-out'
 );
 
+export const iconSpinner = cn(
+  'animate-spin [animation-duration:1s] [animation-timing-function:linear]',
+  '[transform-box:fill-box] [transform-origin:center]'
+);
 export const iconHidden = 'hidden opacity-0';
 export const iconFlipped = '[scale:-1_1]';
 export const iconContainer = 'relative';

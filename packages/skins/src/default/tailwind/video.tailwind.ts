@@ -195,7 +195,7 @@ export const error = {
 export { iconState } from '../../shared/tailwind/icon-state';
 export { button } from './components/button';
 export { buttonGroup } from './components/button-group';
-export { icon, iconContainer, iconFlipped, iconHidden } from './components/icon';
+export { icon, iconContainer, iconFlipped, iconHidden, iconSpinner } from './components/icon';
 export { overlay } from './components/overlay';
 export { playbackRate } from './components/playback-rate';
 export { poster } from './components/poster';

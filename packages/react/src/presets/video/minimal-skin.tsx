@@ -95,7 +95,7 @@ export function MinimalVideoSkin(props: MinimalVideoSkinProps): ReactNode {
       <BufferingIndicator
         render={(props) => (
           <div {...props} className="media-buffering-indicator">
-            <SpinnerIcon className="media-icon" />
+            <SpinnerIcon className="media-icon media-icon--spinner" />
           </div>
         )}
       />
@@ -178,7 +178,7 @@ export function MinimalVideoSkin(props: MinimalVideoSkinProps): ReactNode {
                   <Slider.Thumbnail className="media-preview__thumbnail" />
                 </div>
                 <TimeSlider.Value type="pointer" className="media-time media-preview__time" />
-                <SpinnerIcon className="media-preview__spinner media-icon" />
+                <SpinnerIcon className="media-preview__spinner media-icon media-icon--spinner" />
               </div>
             </TimeSlider.Root>
           </div>
